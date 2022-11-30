@@ -1673,7 +1673,7 @@ h1 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: #fabbcb;
+  background-color: #8d8733;
   z-index: 10000;
 }
 
@@ -1757,8 +1757,8 @@ h1 {
   -webkit-opacity: 0.35;
   filter: alpha(opacity=35);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
-  border-color: #99d6ea;
-  background-color: #99d6ea;
+  border-color: #808e38;
+  background-color: #808e38;
 }
 
 /* 20. the button */
