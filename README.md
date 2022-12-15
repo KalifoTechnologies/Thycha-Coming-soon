@@ -1,1 +1,0 @@
-# Thycha-Coming-soon
