@@ -260,12 +260,14 @@ owl.owlCarousel();
 // Listen to owl events:
 owl.on("changed.owl.carousel", function (event) {
   let div = document.getElementById("listitemshow");
-  console.log(div);
-  console.log("yes");
+  let div2 = document.getElementById("listitemshow2");
   if (div.style["display"] === "none") {
-    div.style["display"] = "block";
+    div.style.display = "block";
+    div2.style.display = "none";
   } else {
-    div.style["display"] = "none";
+    div.style.display = "none";
+    // div2.style.display = "block";
+    div2.removeAttribute("style");
   }
 });
 
