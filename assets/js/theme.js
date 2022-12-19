@@ -254,6 +254,21 @@ $(".owl-carousel").each(function () {
   });
 });
 
+var owl = $(".owl-carousel");
+
+owl.owlCarousel();
+// Listen to owl events:
+owl.on("changed.owl.carousel", function (event) {
+  let div = document.getElementById("listitemshow");
+  console.log(div);
+  console.log("yes");
+  if (div.style["display"] === "none") {
+    div.style["display"] = "block";
+  } else {
+    div.style["display"] = "none";
+  }
+});
+
 // ======================================================
 // Magnific Popup
 // Source: http://dimsemenov.com/plugins/magnific-popup/
