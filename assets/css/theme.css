@@ -1954,6 +1954,10 @@ h6 {
   display: block;
   overflow: hidden;
 }
+.bg-bideo {
+  width: 100%;
+  height: auto;
+}
 @media (min-width: 992px) {
   .portfolio-list-item {
     cursor: url("../img/crosshair-dark.png") 20 20, crosshair;
@@ -6582,6 +6586,7 @@ input.cart-plus-minus-box:focus {
 .nav-bottom-right .owl-nav button.owl-next:hover {
   background-color: #808e38;
   color: #fff;
+  
 }
 .nav-bottom-right .owl-nav button.owl-prev.disabled,
 .nav-bottom-right .owl-nav button.owl-next.disabled {
