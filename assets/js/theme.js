@@ -254,22 +254,22 @@ $(".owl-carousel").each(function () {
   });
 });
 
-var owl = $(".owl-carousel");
+// var owl = $(".owl-carousel");
 
-owl.owlCarousel();
-// Listen to owl events:
-owl.on("changed.owl.carousel", function (event) {
-  let div = document.getElementById("listitemshow");
-  let div2 = document.getElementById("listitemshow2");
-  if (div.style["display"] === "none") {
-    div.style.display = "block";
-    div2.style.display = "none";
-  } else {
-    div.style.display = "none";
-    // div2.style.display = "block";
-    div2.removeAttribute("style");
-  }
-});
+// owl.owlCarousel();
+// // Listen to owl events:
+// owl.on("changed.owl.carousel", function (event) {
+//   let div = document.getElementById("listitemshow");
+//   let div2 = document.getElementById("listitemshow2");
+//   if (div.style["display"] === "none") {
+//     div.style.display = "block";
+//     div2.style.display = "none";
+//   } else {
+//     div.style.display = "none";
+//     // div2.style.display = "block";
+//     div2.removeAttribute("style");
+//   }
+// });
 
 // ======================================================
 // Magnific Popup
