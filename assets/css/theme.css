@@ -6164,8 +6164,8 @@ input.cart-plus-minus-box:focus {
 
 #map {
   width: 100%;
-  min-height: 320px;
-  padding-bottom: 30%;
+  /* min-height: 320px; */
+  /* padding-bottom: 30%; */
 }
 
 /* ------------------------------------------------------------- *
@@ -8230,8 +8230,8 @@ select.input-sm {
 .btn-primary:hover,
 .open > .dropdown-toggle.btn-primary {
   color: #333;
-  background-color: #efd900;
-  border-color: #efd900;
+  background-color: #8d8733;
+  border-color: #8d8733;
 }
 .btn-primary.btn-link {
   color: #808e38;
