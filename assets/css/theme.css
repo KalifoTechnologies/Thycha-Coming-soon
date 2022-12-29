@@ -1,10 +1,10 @@
 /* --------------------------------------------------------------------
-* Template Master Stylesheet
+*  Master Stylesheet
 * Author:		Arjun
 * URL:			https://github.com/Esdark
 *
-* Template main color (Green): #808E38;
-* Template alternative color (OffYellow): #F0F4CD;
+*  main color (Green): #808E38;
+*  alternative color (OffYellow): #8d8733;
 * Global font family: 'Ubuntu Mono';
 -------------------------------------------------------------------- */
 
@@ -94,7 +94,7 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0;
-  font-family: Ubuntu Mono;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
   font-size: 17px;
   color: #333;
@@ -1225,10 +1225,14 @@ h6 {
 
 #page-header {
   /* height handled by "theme.js" file (element percent height) */
-  min-height: 460px;
+  min-height: 450px;
   overflow: hidden;
   background-color: #111;
   overflow: hidden;
+}
+.page-header2 {
+  /* height handled by "theme.js" file (element percent height) */
+  /* height: 935px !important; */
 }
 
 /* page header image */
@@ -1249,6 +1253,14 @@ h6 {
   margin-right: 15px;
   z-index: 3;
 }
+.page-header-caption2 {
+  position: absolute;
+  left: 10%;
+  text-align: center;
+  bottom: 50%;
+  max-width: 800px;
+  z-index: 3;
+}
 
 /* page header title */
 .page-header-title {
@@ -1261,8 +1273,20 @@ h6 {
   line-height: 1;
   opacity: 0.85;
 }
+.page-header-title2 {
+  display: inline;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #808e38;
+  line-height: 1;
+  opacity: 0.85;
+}
 @media (max-width: 992px) {
   .page-header-title {
+    font-size: 42px;
+  }
+  .page-header-title2 {
     font-size: 42px;
   }
 }
@@ -1270,6 +1294,13 @@ h6 {
   .page-header-title {
     font-size: 28px;
     line-height: 0.9;
+  }
+  .page-header-title2 {
+    font-size: 28px;
+    line-height: 0.9;
+  }
+  .page-header-caption2 {
+    text-align: left !important;
   }
 }
 
@@ -1290,8 +1321,22 @@ h6 {
   line-height: 1;
   opacity: 0.85;
 }
+.page-header-sub-title2 {
+  display: inline;
+  margin: 0;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+  line-height: 1;
+  opacity: 0.85;
+}
 @media (max-width: 768px) {
   .page-header-sub-title {
+    font-size: 17px !important;
+    opacity: 1;
+  }
+  .page-header-sub-title2 {
     font-size: 17px !important;
     opacity: 1;
   }
@@ -2498,7 +2543,7 @@ h6 {
 /* portfolio single nav back to list */
 .ps-back-to-list {
   display: block;
-  background-color: #fff266;
+  background-color: #808e38;
   padding: 60px;
   text-align: center;
   font-size: 17px;
@@ -2886,7 +2931,7 @@ h6 {
 /* gallery single nav back to list */
 .gs-back-to-list {
   display: block;
-  background-color: #fff266;
+  background-color: #808e38;
   padding: 60px;
   text-align: center;
   font-size: 17px;
@@ -4218,7 +4263,7 @@ h6 {
 /* blog single nav back to list */
 .bs-back-to-list {
   display: block;
-  background-color: #fff266;
+  background-color: #808e38;
   padding: 60px;
   text-align: center;
   font-size: 17px;
@@ -5466,7 +5511,7 @@ input.cart-plus-minus-box:focus {
 /* shop single nav back to list */
 .ss-back-to-list {
   display: block;
-  background-color: #fff266;
+  background-color: #808e38;
   padding: 60px;
   text-align: center;
   font-size: 17px;
@@ -5817,7 +5862,7 @@ input.cart-plus-minus-box:focus {
 
 /* split box image cover left angle */
 .split-box-image.cover-left:before {
-  background-color: #00eaff;
+  background-color: #8d8733;
 }
 @media (min-width: 992px) {
   .split-box-image.cover-left:before {
@@ -5838,7 +5883,7 @@ input.cart-plus-minus-box:focus {
 
 /* split box image cover right angle */
 .split-box-image.cover-right:before {
-  background-color: #002eff;
+  background-color: #8d8733;
 }
 @media (min-width: 992px) {
   .split-box-image.cover-right:before {
@@ -6164,8 +6209,8 @@ input.cart-plus-minus-box:focus {
 
 #map {
   width: 100%;
-  min-height: 320px;
-  padding-bottom: 30%;
+  /* min-height: 320px; */
+  /* padding-bottom: 30%; */
 }
 
 /* ------------------------------------------------------------- *
@@ -6586,7 +6631,6 @@ input.cart-plus-minus-box:focus {
 .nav-bottom-right .owl-nav button.owl-next:hover {
   background-color: #808e38;
   color: #fff;
-  
 }
 .nav-bottom-right .owl-nav button.owl-prev.disabled,
 .nav-bottom-right .owl-nav button.owl-next.disabled {
@@ -7481,7 +7525,7 @@ body.modal-open {
 .load-more {
   position: relative;
   display: block;
-  background-color: #fff266;
+  background-color: #808e38;
   margin-top: -1px;
   padding: 60px;
   text-align: center;
@@ -8219,7 +8263,7 @@ select.input-sm {
 
 /* Button primary */
 .btn-primary {
-  /* same as template main color */
+  /* same as  main color */
   color: #333;
   background-color: #808e38;
   border-color: #808e38;
@@ -8231,8 +8275,8 @@ select.input-sm {
 .btn-primary:hover,
 .open > .dropdown-toggle.btn-primary {
   color: #333;
-  background-color: #efd900;
-  border-color: #efd900;
+  background-color: #8d8733;
+  border-color: #8d8733;
 }
 .btn-primary.btn-link {
   color: #808e38;
@@ -8538,7 +8582,7 @@ select.input-sm {
   background-color: transparent !important;
   margin: 0 !important;
   padding: 5px !important;
-  color: #f0f4cd; /* same as template main link color */
+  color: #f0f4cd; /* same as  main link color */
   border-color: transparent !important;
 }
 .btn-link.active,
@@ -9157,7 +9201,7 @@ input#footer-subscribe {
   height: 40px;
   line-height: 40px;
   background: url(../img/scroll-to-top-dark.png) no-repeat center;
-  background-color: rgba(134, 134, 134, 0.26);
+  background-color: #8d8733;
   text-align: center;
   font-size: 12px;
   color: #000;

@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------------------------------
 * Helper Stylesheet
 *
-* Template main color: #808E38;
+* Main color: #808E38;
 --------------------------------------------------------------------------------------- */
 
 /* Table of Content
@@ -1045,7 +1045,7 @@
 
 .text-main {
   color: #808e38 !important;
-} /* Template main color */
+} /*  main color */
 .text-white {
   color: #fff !important;
 }
@@ -1095,7 +1095,7 @@
 
 .link-main a {
   color: #808e38 !important;
-} /* Template main color */
+} /*  main color */
 .link-white a {
   color: #fff !important;
 }
@@ -1149,13 +1149,13 @@
 
 .bg-main {
   background-color: #808e38 !important;
-} /* Template main color */
+} /*  main color */
 .bg-main-2 {
   background-color: #fff58e !important;
-} /* Template main color light version */
+} /*  main color light version */
 .bg-main-3 {
   background-color: #fffcd6 !important;
-} /* Template main color lightest version */
+} /*  main color lightest version */
 .bg-white {
   background-color: #fff !important;
 }
@@ -1209,58 +1209,58 @@
 
 .bg-transparent-1-main {
   background-color: rgba(255, 232, 0, 0.1) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-1-5-main {
   background-color: rgba(255, 232, 0, 0.15) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-2-main {
   background-color: rgba(255, 232, 0, 0.2) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-2-5-main {
   background-color: rgba(255, 232, 0, 0.25) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-3-main {
   background-color: rgba(255, 232, 0, 0.3) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-3-5-main {
   background-color: rgba(255, 232, 0, 0.35) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-4-main {
   background-color: rgba(255, 232, 0, 0.4) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-4-5-main {
   background-color: rgba(255, 232, 0, 0.45) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-5-main {
   background-color: rgba(255, 232, 0, 0.5) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-5-5-main {
   background-color: rgba(255, 232, 0, 0.55) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-6-main {
   background-color: rgba(255, 232, 0, 0.6) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-6-5-main {
   background-color: rgba(255, 232, 0, 0.65) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-7-main {
   background-color: rgba(255, 232, 0, 0.7) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-7-5-main {
   background-color: rgba(255, 232, 0, 0.75) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-8-main {
   background-color: rgba(255, 232, 0, 0.8) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-8-5-main {
   background-color: rgba(255, 232, 0, 0.85) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-9-main {
   background-color: rgba(255, 232, 0, 0.9) !important;
-} /* template main color */
+} /*  main color */
 .bg-transparent-9-5-main {
   background-color: rgba(255, 232, 0, 0.95) !important;
-} /* template main color */
+} /*  main color */
 
 .bg-transparent-1-white {
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -2192,19 +2192,19 @@
 /* border color classes */
 .border-main {
   border-color: #808e38 !important;
-} /* template main color */
+} /*  main color */
 .border-top-main {
   border-top-color: #808e38 !important;
-} /* template main color */
+} /*  main color */
 .border-bottom-main {
   border-bottom-color: #808e38 !important;
-} /* template main color */
+} /*  main color */
 .border-left-main {
   border-left-color: #808e38 !important;
-} /* template main color */
+} /*  main color */
 .border-right-main {
   border-right-color: #808e38 !important;
-} /* template main color */
+} /*  main color */
 
 .border-white {
   border-color: #fff !important;

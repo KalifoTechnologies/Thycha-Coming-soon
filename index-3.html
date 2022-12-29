@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-
-<!--
-   :   Thycha - Responsive HTML5 Portfolio Website 
-   Author:     Arjun
-   URL:        http://kalifotech.com
-   Notes:		You are free to use prepared helper classes to customize your website. Look into "helper.css" file for more info.  
--->
-
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>Portfolio - Thycha</title>
+    <title>Home - Thycha</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="kalifotech.com" />
+    <meta name="author" content="https://github.com/Esdark" />
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,7 +62,7 @@
     />
     <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
 
-    <!-- Theme master CSS -->
+    <!-- master CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/helper.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
   </head>
@@ -80,7 +72,7 @@
 		==================================
 		* Use class "gl-search-dark" to enable global search dark style.
 		-->
-    <div id="global-search" class="gl-s gls-simple">
+    <div id="global-search" class="gl-s">
       <!-- Begin global search close button -->
       <div class="global-search-close-wrap">
         <a href="#0" class="global-search-close" title="Close">
@@ -111,7 +103,7 @@
 			================ -->
       <div id="logo">
         <a href="index.html"
-          ><img src="assets/img/logo-dark.png" title="Home" alt="logo"
+          ><img src="assets/img/Thycha Icon 1.png" title="Home" alt="logo"
         /></a>
       </div>
       <!-- End logo -->
@@ -139,8 +131,12 @@
             <!-- Begin menu nav -->
             <div class="menu-nav">
               <ul class="menu-list">
-                <li class="has-children">
-                  <a href="index.html" class="sub-menu-trigger">Home</a>
+                <li class="has-children active">
+                  <a href="#0" class="sub-menu-trigger">Home</a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index.html">Home 2</a></li>
+                  </ul>
                 </li>
                 <li class="has-children">
                   <a href="#0" class="sub-menu-trigger">About</a>
@@ -149,7 +145,7 @@
                     <li><a href="team.html">The Team</a></li>
                   </ul>
                 </li>
-                <li class="has-children active">
+                <li class="has-children">
                   <a href="#0" class="sub-menu-trigger">Portfolio</a>
                   <ul class="sub-menu">
                     <li>
@@ -304,113 +300,145 @@
     <div id="body-content">
       <!-- Begin content container -->
       <div id="content-container">
-        <!-- ========================
-				///// Begin page header /////
-				========================= -->
-        <section id="page-header" data-percent-height="0.7">
-          <!-- Begin page header image -->
+        <!-- ==============================
+				///// Begin intro (slideshow) /////
+				=============================== -->
+        <section id="intro" class="slideshow bg-dark">
+          <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+					====================================================================
+					* Use class "nav-outside" for outside nav.
+					* Use class "nav-outside-top" for outside top nav.
+					* Use class "nav-bottom-right" for bottom right nav.
+					* Use class "nav-rounded" for rounded nav.
+					* Use class "dots-outside" for outside dots.
+					* Use class "dots-left" or "dots-right" to align dots.
+					* Use class "dots-rounded" for rounded dots.
+					* Use class "owl-mousewheel" to enable mousewheel support.
+					* Available carousel data attributes:
+							data-items="5".......................(items visible on desktop)
+							data-tablet-landscape="4"............(items visible on mobiles)
+							data-tablet-portrait="3".............(items visible on mobiles)
+							data-mobile-landscape="2"............(items visible on tablets)
+							data-mobile-portrait="1".............(items visible on tablets)
+							data-loop="true".....................(true/false)
+							data-margin="10".....................(space between items)
+							data-center="true"...................(true/false)
+							data-start-position="0"..............(item start position)
+							data-animate-in="fadeIn".............(fade-in animation)
+							data-animate-out="fadeOut"...........(fade-out animation)
+							data-mouse-drag="false"..............(true/false)
+							data-touch-drag="false"..............(true/false)
+							data-autoheight="true"...............(true/false)
+							data-autoplay="true".................(true/false)
+							data-autoplay-timeout="5000".........(milliseconds)
+							data-autoplay-hover-pause="true".....(true/false)
+							data-autoplay-speed="800"............(milliseconds)
+							data-drag-end-speed="800"............(milliseconds)
+							data-nav="true"......................(true/false)
+							data-nav-speed="800".................(milliseconds)
+							data-dots="false"....................(true/false)
+							data-dots-speed="800"................(milliseconds)
+					-->
           <div
-            class="page-header-image parallax fade-out-scroll-6 bg-image"
-            style="
-              background-image: url(assets/img/page-header/page-header-bg-1.jpg);
-              background-position: 50% 30%;
-            "
+            class="owl-carousel cursor-grab fade-out-scroll-5 nav-bottom-right"
+            data-items="1"
+            data-dots="false"
+            data-nav="true"
           >
-            <!-- Begin page header caption -->
-            <div class="page-header-caption">
-              <h1 class="page-header-title">Portfolio</h1>
-              <div class="page-header-sub-title-wrap">
-                <h2 class="page-header-sub-title">Our latest works.</h2>
+            <!-- Begin carousel item 
+						========================= -->
+            <div
+              class="cc-item parallax bg-image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
+                background-position: 50% 50%;
+              "
+              data-percent-height="0.9"
+            >
+              <!-- Begin caption -->
+              <div class="cc-caption intro-caption bottom-left caption-animate">
+                <h1 class="intro-title">Welcome!<br />We Are Thycha</h1>
+                <div class="intro-sub-title-wrap max-width-400">
+                  <!-- max width class is optional -->
+                  <h2 class="intro-sub-title">
+                    We are a creative design company that creates a really cool
+                    projects. :)
+                  </h2>
+                </div>
               </div>
+              <!-- End caption -->
             </div>
-            <!-- End page header caption -->
+            <!-- End carousel item -->
 
-            <!-- Begin scroll down button -->
-            <a
-              href="#portfolio-list-section"
-              class="scroll-down sm-scroll hide-from-sm"
-              title="Scroll down"
-            ></a>
-            <!-- End scroll down button -->
+            <!-- Begin carousel item 
+						========================= -->
+            <div
+              class="cc-item parallax bg-image"
+              style="
+                background-image: url(assets/img/intro/intro-bg-2.jpg);
+                background-position: 50% 50%;
+              "
+              data-percent-height="0.9"
+            >
+              <!-- Begin caption -->
+              <div class="cc-caption intro-caption bottom-left caption-animate">
+                <h1 class="intro-title">Cool<br />Headphones</h1>
+                <div class="intro-sub-title-wrap">
+                  <h2 class="intro-sub-title">A new level of sound.</h2>
+                </div>
+              </div>
+              <!-- End caption -->
+            </div>
+            <!-- End carousel item -->
+
+            <!-- Begin carousel item 
+						========================= -->
+            <div
+              class="cc-item parallax bg-image"
+              style="
+                background-image: url(assets/img/intro/intro-bg-3.jpg);
+                background-position: 50% 55%;
+              "
+              data-percent-height="0.9"
+            >
+              <!-- Begin caption -->
+              <div class="cc-caption intro-caption bottom-left caption-animate">
+                <h1 class="intro-title">The Old<br />Typewriter</h1>
+                <div class="intro-sub-title-wrap">
+                  <h2 class="intro-sub-title">How cool is that?</h2>
+                </div>
+              </div>
+              <!-- End caption -->
+            </div>
+            <!-- End carousel item -->
+
+            <!-- Begin carousel button
+						========================= -->
+
+            <!-- End carousel button -->
           </div>
-          <!-- End page header image -->
+          <!-- End content carousel -->
         </section>
-        <!-- End page header -->
+        <!-- End intro -->
 
         <!-- ===================================
 				///// Begin portfolio list section /////
 				==================================== -->
         <section id="portfolio-list-section">
-          <div class="isotope-wrap">
+          <div class="isotope-wrap" id="listitemshow">
             <!-- Begin isotope
 						===================
 						* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 						* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 						-->
-            <div class="isotope col-3 gutter-3">
-              <!-- Begin isotope top content -->
-              <div class="isotope-top-content">
-                <!-- Begin isotope filter 
-								==========================
-								* Use class "on-dark-bg" if background is dark.
-								-->
-                <div class="isotope-filter text-center">
-                  <!-- Begin isotope filter links -->
-                  <ul class="isotope-filter-links">
-                    <li>
-                      <a
-                        href="#portfolio-list-section"
-                        class="sm-scroll active"
-                        data-filter="*"
-                        >All</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#portfolio-list-section"
-                        class="sm-scroll"
-                        data-filter=".Branding"
-                        >Branding</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#portfolio-list-section"
-                        class="sm-scroll"
-                        data-filter=".Digital Marketing"
-                        >Digital Marketing</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#portfolio-list-section"
-                        class="sm-scroll"
-                        data-filter=".Web Development"
-                        >Web Development</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#portfolio-list-section"
-                        class="sm-scroll"
-                        data-filter=".motion"
-                        >Motion</a
-                      >
-                    </li>
-                  </ul>
-                  <!-- End isotope filter links -->
-                </div>
-                <!-- End isotope filter -->
-              </div>
-              <!-- End isotope top content -->
-
+            <div class="isotope col-3">
               <!-- Begin isotope items wrap 
 							==============================
 							* Use class "iso-boxed" to enable boxed layout.
 							* Use class "pli-caption-center" to enable caption center position.
 							* Use class "pli-caption-alter" to enable caption alternative style.
 							-->
-              <div class="isotope-items-wrap pli-caption-center no-padding-top">
+              <div class="isotope-items-wrap pli-caption-alter">
                 <!-- Grid sizer (do not remove!!!) -->
                 <div class="grid-sizer"></div>
 
@@ -419,7 +447,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-2 Branding">
+                <div class="isotope-item iso-height-2">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-1.html"
@@ -431,8 +459,10 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Beer Six Back</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div>
+                          <h2 class="pli-title">Beer Six Back</h2>
+                        </div>
+                        <div><span class="pli-category">Print</span></div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -446,7 +476,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding motion">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-2.html"
@@ -456,11 +486,20 @@
                       background-position: 50% 50%;
                     "
                   >
+                    <!-- <video
+                      class="bg-bideo"
+                      muted
+                      autoplay
+                      loop
+                      src="./assets/img/Thy Aug15.mp4"
+                    ></video> -->
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Sushi Bar</h2></div>
                         <div>
-                          <span class="pli-category">Branding, Motion</span>
+                          <h2 class="pli-title">Sushi Bar</h2>
+                        </div>
+                        <div>
+                          <span class="pli-category">Print, Motion</span>
                         </div>
                       </div>
                       <div class="pli-arrow"></div>
@@ -475,7 +514,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-3.html"
@@ -487,8 +526,10 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Armenian Inventors</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div>
+                          <h2 class="pli-title">Armenian Inventors</h2>
+                        </div>
+                        <div><span class="pli-category">Print</span></div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -502,7 +543,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-4.html"
@@ -514,8 +555,10 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">The 13th High Fest</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div>
+                          <h2 class="pli-title">The 13th High Fest</h2>
+                        </div>
+                        <div><span class="pli-category">Print</span></div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -529,7 +572,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-2 web-design motion">
+                <div class="isotope-item iso-height-2">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-5.html"
@@ -562,34 +605,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 photography">
-                  <!-- Begin portfolio list item -->
-                  <a
-                    href="portfolio-single-6.html"
-                    class="portfolio-list-item bg-image"
-                    style="
-                      background-image: url(assets/img/porfolio/portfolio-7.jpg);
-                      background-position: 50% 50%;
-                    "
-                  >
-                    <div class="pli-hover">
-                      <div class="pli-caption">
-                        <div><h2 class="pli-title">Day &amp; Night</h2></div>
-                        <div><span class="pli-category">Photography</span></div>
-                      </div>
-                      <div class="pli-arrow"></div>
-                    </div>
-                  </a>
-                  <!-- End portfolio list item -->
-                </div>
-                <!-- End isotope item -->
-
-                <!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-                <div class="isotope-item iso-height-2 web-design">
+                <div class="isotope-item iso-height-2">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-2.html"
@@ -601,7 +617,9 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Metarez Lasminar</h2></div>
+                        <div>
+                          <h2 class="pli-title">Metarez Lasminar</h2>
+                        </div>
                         <div><span class="pli-category">Web Design</span></div>
                       </div>
                       <div class="pli-arrow"></div>
@@ -616,19 +634,21 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 photography">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
-                    href="portfolio-single-3.html"
+                    href="portfolio-single-6.html"
                     class="portfolio-list-item bg-image"
                     style="
-                      background-image: url(assets/img/porfolio/portfolio-9.jpg);
+                      background-image: url(assets/img/porfolio/portfolio-7.jpg);
                       background-position: 50% 50%;
                     "
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Altimos Tereck</h2></div>
+                        <div>
+                          <h2 class="pli-title">Day &amp; Night</h2>
+                        </div>
                         <div><span class="pli-category">Photography</span></div>
                       </div>
                       <div class="pli-arrow"></div>
@@ -643,7 +663,36 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 photography motion">
+                <div class="isotope-item iso-height-1">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-3.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-9.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">Altimos Tereck</h2>
+                        </div>
+                        <div><span class="pli-category">Photography</span></div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-4.html"
@@ -655,7 +704,9 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Zuula Maiden</h2></div>
+                        <div>
+                          <h2 class="pli-title">Zuula Maiden</h2>
+                        </div>
                         <div>
                           <span class="pli-category">Photography, Motion</span>
                         </div>
@@ -666,16 +717,38 @@
                   <!-- End portfolio list item -->
                 </div>
                 <!-- End isotope item -->
+              </div>
+              <!-- End isotope items wrap -->
+            </div>
+            <!-- End isotope -->
+          </div>
+          <!-- /.isotope-wrap -->
+          <div class="isotope-wrap" id="listitemshow2">
+            <!-- Begin isotope
+						===================
+						* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
+						* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
+						-->
+            <div class="isotope col-3">
+              <!-- Begin isotope items wrap 
+							==============================
+							* Use class "iso-boxed" to enable boxed layout.
+							* Use class "pli-caption-center" to enable caption center position.
+							* Use class "pli-caption-alter" to enable caption alternative style.
+							-->
+              <div class="isotope-items-wrap pli-caption-alter">
+                <!-- Grid sizer (do not remove!!!) -->
+                <div class="grid-sizer"></div>
 
                 <!-- ===================== 
 								/// Begin isotope item ///
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding">
+                <div class="isotope-item iso-height-2">
                   <!-- Begin portfolio list item -->
                   <a
-                    href="portfolio-single-5.html"
+                    href="portfolio-single-1.html"
                     class="portfolio-list-item bg-image"
                     style="
                       background-image: url(assets/img/porfolio/portfolio-11.jpg);
@@ -684,8 +757,10 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Ullam Zert Gampos</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div>
+                          <h2 class="pli-title">Beer Six Back</h2>
+                        </div>
+                        <div><span class="pli-category">Print</span></div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -699,10 +774,10 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding motion">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
-                    href="portfolio-single-1.html"
+                    href="portfolio-single-2.html"
                     class="portfolio-list-item bg-image"
                     style="
                       background-image: url(assets/img/porfolio/portfolio-12.jpg);
@@ -711,9 +786,11 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Naires Trectum</h2></div>
                         <div>
-                          <span class="pli-category">Branding, Motion</span>
+                          <h2 class="pli-title">Sushi Bar</h2>
+                        </div>
+                        <div>
+                          <span class="pli-category">Print, Motion</span>
                         </div>
                       </div>
                       <div class="pli-arrow"></div>
@@ -728,34 +805,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-2 Branding">
-                  <!-- Begin portfolio list item -->
-                  <a
-                    href="portfolio-single-2.html"
-                    class="portfolio-list-item bg-image"
-                    style="
-                      background-image: url(assets/img/porfolio/portfolio-6.jpg);
-                      background-position: 50% 50%;
-                    "
-                  >
-                    <div class="pli-hover">
-                      <div class="pli-caption">
-                        <div><h2 class="pli-title">Ferritsia Nallo</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
-                      </div>
-                      <div class="pli-arrow"></div>
-                    </div>
-                  </a>
-                  <!-- End portfolio list item -->
-                </div>
-                <!-- End isotope item -->
-
-                <!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-                <div class="isotope-item iso-height-1 Branding">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-3.html"
@@ -768,9 +818,9 @@
                     <div class="pli-hover">
                       <div class="pli-caption">
                         <div>
-                          <h2 class="pli-title">Ecora Betrum At Namez</h2>
+                          <h2 class="pli-title">Armenian Inventors</h2>
                         </div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div><span class="pli-category">Print</span></div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -784,7 +834,7 @@
 								========================== 
 								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 								-->
-                <div class="isotope-item iso-height-1 Branding">
+                <div class="isotope-item iso-height-1">
                   <!-- Begin portfolio list item -->
                   <a
                     href="portfolio-single-4.html"
@@ -796,8 +846,161 @@
                   >
                     <div class="pli-hover">
                       <div class="pli-caption">
-                        <div><h2 class="pli-title">Vertima Latzeck</h2></div>
-                        <div><span class="pli-category">Branding</span></div>
+                        <div>
+                          <h2 class="pli-title">The 13th High Fest</h2>
+                        </div>
+                        <div><span class="pli-category">Print</span></div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-2">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-5.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-15.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">
+                            Prometey Bank Annual Report 2011
+                          </h2>
+                        </div>
+                        <div>
+                          <span class="pli-category">Web Design, Motion</span>
+                        </div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-2">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-2.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-16.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">Metarez Lasminar</h2>
+                        </div>
+                        <div><span class="pli-category">Web Design</span></div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-1">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-6.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-17.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">Day &amp; Night</h2>
+                        </div>
+                        <div><span class="pli-category">Photography</span></div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-1">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-3.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-18.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">Altimos Tereck</h2>
+                        </div>
+                        <div><span class="pli-category">Photography</span></div>
+                      </div>
+                      <div class="pli-arrow"></div>
+                    </div>
+                  </a>
+                  <!-- End portfolio list item -->
+                </div>
+                <!-- End isotope item -->
+
+                <!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+                <div class="isotope-item iso-height-1">
+                  <!-- Begin portfolio list item -->
+                  <a
+                    href="portfolio-single-4.html"
+                    class="portfolio-list-item bg-image"
+                    style="
+                      background-image: url(assets/img/porfolio/portfolio-20.jpg);
+                      background-position: 50% 50%;
+                    "
+                  >
+                    <div class="pli-hover">
+                      <div class="pli-caption">
+                        <div>
+                          <h2 class="pli-title">Zuula Maiden</h2>
+                        </div>
+                        <div>
+                          <span class="pli-category">Photography, Motion</span>
+                        </div>
                       </div>
                       <div class="pli-arrow"></div>
                     </div>
@@ -839,7 +1042,10 @@
               <!-- Begin footer logo -->
               <div class="footer-logo margin-top-40 margin-bottom-40">
                 <a href="index.html"
-                  ><img src="assets/img/logo-light.png" title="Home" alt="logo"
+                  ><img
+                    src="assets/img/Thycha Icon.svg"
+                    title="Home"
+                    alt="logo"
                 /></a>
               </div>
               <!-- End footer logo -->
@@ -928,7 +1134,7 @@
 
               <!-- Begin copyright -->
               <div class="copyright">
-                Copyright 2022/ All rights reserved <br />
+                Copyright 2022 / All rights reserved <br />
                 Designed by
                 <a target="_blank" href="https://github.com/Esdark">Arjun</a>
               </div>
@@ -1000,13 +1206,7 @@
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
+      })(window, document, "script", "link to google analytics", "ga");
 
       ga("create", "UA-84668666-1", "auto");
       ga("send", "pageview");
